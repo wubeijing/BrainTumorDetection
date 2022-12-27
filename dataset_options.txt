@@ -1,0 +1,22 @@
+Healthcare
+- Brain Tumor Detection: https://www.kaggle.com/preetviradiya/brian-tumor-dataset?select=Brain+Tumor+Data+Set
+- COVID Detection: https://www.kaggle.com/ahemateja19bec1025/covid-xray-dataset
+- Chest Cancer Detection: https://www.kaggle.com/mohamedhanyyy/chest-ctscan-images
+- ChestX-ray14: https://nihcc.app.box.com/v/ChestXray-NIHCC
+- There is a huge collection of datasets here: https://wiki.cancerimagingarchive.net/display/Public/Collections, however, it would be more apt as a capstone project than a Course Lab Project.
+- Another great source is: https://www.nlm.nih.gov/NIHbmic/nih_data_sharing_repositories.html
+
+Traffic Sign Classification
+- Traffic Sign Recognition (Cropped): https://www.kaggle.com/shanmukh05/traffic-sign-cropped
+- Traffic Sign Recognition: https://www.kaggle.com/ahemateja19bec1025/traffic-sign-dataset-classification
+- Chinese Traffic Sign Recognition: https://www.kaggle.com/dmitryyemelyanov/chinese-traffic-signs
+- Germain Traffic Sign Recognition: https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign?select=Train.csv
+- Persian Traffic Sign Recogntion: https://www.kaggle.com/saraparsaseresht/persian-traffic-sign-dataset-ptsd
+
+Wine Quality (Different one than we have worked on):
+- https://archive.ics.uci.edu/ml/datasets/Wine+Quality
+
+Lobbying Data: using lobbying data to create a model of which bills are passed by congress.
+- Lobbying Data: REST API: https://lda.senate.gov/api/
+- Congressional Bill Status: https://www.govinfo.gov/bulkdata/BILLSTATUS/117/hr
+- Requires a lot of data pre-processing.

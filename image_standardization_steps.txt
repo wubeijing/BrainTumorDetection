@@ -1,0 +1,25 @@
+Necessary packages: PIL (pillow), numpy, pandas, matplotlib, os
+
+Step 1: Create Function that takes in a filename of an image and a picture dimension (aka height x width of final image), and returns a modified version of the image that satisfies those picture dimensions, alongside a vectorized version of the image to use for model development
+Step 1a: Open image as a greyscale image (see PIL's .image and .convert functions)
+Step 1b: Capture the dimensions of your image (see PIL's .size property -- note: THIS WILL BE IN WIDTH X HEIGHT ORDER)
+Step 1c: Following gathering the dimensions of your image, you will have two cases
+Case 1: Image is already square
+Case 2: Image is not square
+Consider Case 1: Image is already square
+Step 1d: convert image to a 2-D vector / matrix representation where each i,j value shows the greyscale pixel value between (0-255) of the pixel located in the ith row and jth column
+Consider Case 2: Image is not a square -- therefore, we need to convert the image to a square image in such a way that the original aspect ratio does not get distorted
+Conversion to a square can be done by adding equal padding to the image along the dimension that is shorter, so either rowwise or columnwise
+Step 1e: Identify the difference between your row and column quantity of dimensions
+Step 1f: Create two approximately equal sized portions of the difference calculated above (example: if your row dim = 290, col dim = 250, difference = 40 and each portion size = 20)
+Step 1g: convert image to a 2-D vector / matrix representation where each i,j value shows the greyscale pixel value between (0-255) of the pixel located in the ith row and jth column
+Step 1h: Add portion sized padding to top/bottom is rowsize is smaller, else portion sized padding to left/right if colsize is smaller (see np.hstack and np.vstack)
+Step 1i: After necessary transformations have been applied following case 1 or case 2, we now need to resize the image into the dimensions we specified
+Step 1j: Save the vectorized/transformed version of our image as a greyscale image (see plt.imsave and the tempfile library so you can save temporarily rather than on your computer's hard drive)
+Step 1k: Open the square image as a greyscale image and resize (see PIL's .resize)
+Step 1l: return the resized image and a vectorized version of this image
+
+Step 2: Apply the function for standardizing individual images to our entire dataset
+Step 2a: compile list of all filenames
+Step 2b: Construct a loop that loops through all of our files and applies the function above
+Step 2c: Save the transformed image for each file in a location of your choice and store a vectorized version of our image along with the Cancer/Not Cancer labeled in a labeled dataset/dataframe
